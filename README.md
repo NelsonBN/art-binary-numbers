@@ -136,7 +136,7 @@ In the following example, I will use a strongly-typed language, such as C# or Ja
 
 For instance, an `int` in C# is 32 bits (or 4 bytes),with a value range from `-2,147,483,648` to `2,147,483,647`. You might wonder: if an `int` is 32 bits, why isn't the range from `-4,294,967,295` to `4,294,967,295`? This is because 32 active bits can indeed represent the number `4,294,967,295`. The explanation lies in the allocation of these bits: one bit is reserved for sign, leaving the remaining 31 bits to define the magnitude of the number. Another question might arise: why is the negative range slightly larger than the positive one? This is because `0` is counted as a positive number. As such, the positive range starts at `0`, while the negative range begins at `-1`.
 
-On the other hand, consider a uint (unsigned int) in C#. It also spans 32 bits (4 bytes), but its value range extends from 0 to 4,294,967,295. This is because, in this case, no bit is designated for the sign. As a result, all 32 bits are utilized to represent the magnitude of the number.
+On the other hand, consider a uint (unsigned int) in C#. It also spans 32 bits (4 bytes), but its value range extends from `0` to `4,294,967,295`. This is because, in this case, no bit is designated for the sign. As a result, all 32 bits are utilized to represent the magnitude of the number.
 
 
 
@@ -183,3 +183,6 @@ Console.WriteLine(Convert.ToString(negativeNumber, 2).PadLeft(32, '0'));
 ## Conclusion
 
 In this article, we discussed fundamental concepts of binary numbers, including converting between binary and decimal, understanding bits, and representing negative numbers. These basics are vital for understanding computer operations. Many problems have efficient solutions, but we might not grasp them due to unfamiliarity with these basics. I'll explore more related topics in upcoming articles.
+
+
+[Medium Post](https://medium.com/@NelsonBN/binary-numbers-5ddc7722957f)
